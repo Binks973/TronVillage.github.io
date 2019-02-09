@@ -1,0 +1,68 @@
+<style>
+
+    @media (max-width: 480px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+
+</style>
+
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">История переводов</h4>
+    </div>
+    <div style="padding-bottom: 0" class="modal-body">
+        <form style="margin-bottom: 12px; padding: 0 5px" class="form-signin ms-form-signin ms-login-form" role="form">
+            <table style="margin-top: 10px; margin-bottom: 0" class='table table-bordered'>
+                <thead>
+                <tr class='active'>
+                    <td style="width: 130px" class="td-head border-none">
+                        <img src="../images/time.png" style="height: 35px;width: 35px; transform: translateX(-5px);">
+                        <div style="transform: translateY(2px) translateX(-5px); display: inline-block;font-size: 14px;"> Время</div>
+                    </td>
+                    <td class="td-head border-none hide-on-mobile">
+                        <img src="../images/book.png" style="height: 35px;width: 35px; transform: translateX(-5px);">
+                        <div style="transform: translateY(2px) translateX(-5px); display: inline-block;font-size: 14px;"> Транзакция</div>
+                    </td>
+                    <td style="width: 130px" class="td-head border-none">
+                        <img src="../images/amount.png" style="height: 35px;width: 35px;transform: translateX(-3px);">
+                        <div style="transform: translateY(2px) translateX(-6px);display: inline-block;font-size: 14px;"> Сумма</div>
+                    </td>
+                </tr>
+                </thead>
+            </table>
+            <div id="modal-deposit-history-box" style="max-height: 489px; overflow-y: scroll; width: calc(100% + 12px);">
+                <table style="margin-bottom: -10px" class='table table-bordered'>
+                    <thead>
+                    <tr class='active'>
+                        <td style="width: 130px" class="td-head border-none"></td>
+                        <td class="td-head border-none hide-on-mobile"></td>
+                        <td style="width: 130px" class="td-head border-none"></td>
+                    </tr>
+                    </thead>
+                    <tbody id="modal-deposit-history"></tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+    <div style="margin-top: 2px; padding-top: 0; padding-bottom: 0; height: 25px" class="modal-footer">
+        <div style="display: inline-block; width: 160px" class="ms-socLinks">
+            <div style="height: 1px"></div>
+            <span class="modal-balance-type" style="color: white; font-size: 12px">Всего пополнено:</span>
+            <div style="height: 1px; margin-bottom: -13px"></div>
+            <span style="display: inline-block; transform: translateX(5px); color: white; font-size: 16px; line-height: 37px">
+                <span id="modal-total-deposit">...</span> <span style="font-size: 14px">TRX</span>
+            </span>
+        </div>
+        <div style="display: inline-block; width: 160px" class="ms-socLinks">
+            <div style="height: 1px"></div>
+            <span class="modal-balance-type" style="color: white; font-size: 12px">Всего снято:</span>
+            <div style="height: 1px; margin-bottom: -13px"></div>
+            <span style="display: inline-block; transform: translateX(5px); color: white; font-size: 16px; line-height: 37px">
+                <span id="modal-total-withdraw">...</span> <span style="font-size: 14px">TRX</span>
+            </span>
+        </div>
+    </div>
+</div>
