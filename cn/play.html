@@ -16,24 +16,24 @@
     <meta property="og:image" content="../images/icon_preview.jpg"/>
 
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/game.css?v=1549332587147" type="text/css">
+    <link rel="stylesheet" href="../css/game.css?v=1549671806029" type="text/css">
     <link rel="stylesheet" href="../css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="../css/hover.css" type="text/css">
     <link rel="stylesheet" href="../css/simplebar.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css?v=1549332587147" type="text/css">
-    <link rel="stylesheet" href="../css/play.css?v=1549332587147" type="text/css">
+    <link rel="stylesheet" href="../css/style.css?v=1549671806029" type="text/css">
+    <link rel="stylesheet" href="../css/play.css?v=1549671806029" type="text/css">
 
     <script src="../js/dest/jquery-2.1.4.min.js"></script>
     <script src="../js/dest/jquery.actual.js"></script>
     <script src="../js/dest/countUp.js"></script>
-    <script src="../js/dest/wow.js?v=1549332587147"></script>
+    <script src="../js/dest/wow.js?v=1549671806029"></script>
     <script src="../js/dest/bootstrap.min.js"></script>
     <script src="../js/dest/tippy.min.js"></script>
     <script src="../js/dest/sweetalert.min.js"></script>
-    <script src="../js/dest/tronapp.js?v=1549332587147"></script>
-    <script src="../js/dest/app.js?v=1549332587147"></script>
-    <script src="./index.js?v=1549332587147"></script>
+    <script src="../js/dest/tronapp.js?v=1549671806029"></script>
+    <script src="../js/dest/app.js?v=1549671806029"></script>
+    <script src="./index.js?v=1549671806029"></script>
 
 </head>
 <body style="opacity: 0">
@@ -126,14 +126,24 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div id="stats-btn-container" class="col-xs-12">
+                                            <div style="height: 10px; padding: 0"></div>
+                                            <a class="btn-card-outer">
+                                                <div class="fix col-xs-12 col-sm-6">
+                                                    <button id="btn-scoreboard" class="btn-card btn-card-stats btn-white hvr-grow">
+                                                        <i style="transform: translateY(-0.5px)" class="fas fa-medal"></i>
+                                                        <span>顶级球员</span>
+                                                    </button>
+                                                </div>
+                                                <div class="fix col-xs-12 col-sm-6">
+                                                    <button id="btn-history" class="btn-card btn-card-stats btn-white hvr-grow">
+                                                        <i style="transform: translateY(-0.5px)" class="fas fa-exchange-alt"></i>
+                                                        <span>转账</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div style="height: 10px; padding: 0"></div>
-                                    <a class="btn-card-outer">
-                                        <button id="btn-scoreboard" class="btn-card btn-white hvr-grow">
-                                            <i style="transform: translateY(-0.5px)" class="fas fa-medal"></i>
-                                            <span>顶级球员</span>
-                                        </button>
-                                    </a>
                                 </div>
                                 <div class="coin-card-footer"></div>
                             </div>
@@ -275,6 +285,11 @@
     </div>
     <div class="modal fade" id="scoreboardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div id="scoreboardModalInner" class="modal-dialog ms-modal">
+
+        </div>
+    </div>
+    <div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="historyModalInner" class="modal-dialog ms-modal">
 
         </div>
     </div>
